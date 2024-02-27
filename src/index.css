@@ -1,0 +1,32 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@1,700&family=Charis+SIL:wght@400;700&family=Inter&family=Inter+Tight:wght@200&display=swap');
+/* @import 'animate.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  min-width: 320px;
+  min-height: 100vh;
+  /* scrollbar-width: none !important; 
+  &::-webkit-scrollbar{
+    display: none; } */
+}
+
+body{
+
+font-family: 'Inter', sans-serif;
+font-family: 'Onest', sans-serif;;
+background: #e3e3e3;
+background: #fff;
+overflow-x: hidden;
+}
