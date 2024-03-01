@@ -1,0 +1,47 @@
+
+<svg width="1440" height="1440" viewBox="0 0 1440 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1875_58205)">
+<path d="M240 0L0 240H240" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M0 240H240M240 240V480H0L240 240Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M0 480H240L0 720H240" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M0 720H240M240 720V960H0L240 720Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M480 240V0L240 240H480Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M480 480H240M240 480V240H480L240 480Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M240 480H480M480 480V720M480 480L240 720" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M240 720V960M240 960L480 720V960H240Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M720 0L480 240" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M720 480V240L480 480H720Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M720 480H480V720M720 480V720H480M720 480L480 720" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M720 720H480V960H720V720Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 240V0L720 240H960Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 240H720V480H960V240Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 480H720V720H960V480Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 960H720M720 960V720H960L720 960Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 0V240L1200 0" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 240V480L1200 240V480" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 480V720M960 720L1200 480V720H960Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 720H1200L960 960" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M1440 0L1200 240H1440" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M1440 240H1200V480L1440 240Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M1200 480V720L1440 480" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M240 960L0 1200H240" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M0 1200H240M240 1200V1440M240 1200L0 1440" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M480 1200V960L240 1200H480Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M480 1200H240V1440L480 1200Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M480 960V1200L720 960" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M720 1440V1200L480 1440" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 960L720 1200H960" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M960 1200H720V1440" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M1200 960L960 1200" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M1200 1440V1200L960 1440" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M1440 960L1200 1200H1440" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M1440 1200H1200V1440L1440 1200Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M1440 1200H1200V1440L1440 1200Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path d="M1440 960H1200M1200 960L1440 720H1200V960Z" stroke="#202080" stroke-linecap="square" stroke-linejoin="bevel"/>
+</g>
+<defs>
+<clipPath id="clip0_1875_58205">
+<rect width="1440" height="1440" fill="white"/>
+</clipPath>
+</defs>
+</svg>

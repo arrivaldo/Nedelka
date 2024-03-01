@@ -1,0 +1,636 @@
+/* Font Family
+================================================== */
+
+
+/* Global Styles
+================================================== */
+
+/* Setup
+================================================== */
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Misc.
+================================================== */
+
+.add-bottom {
+  margin-bottom: 2rem !important;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  text-align: center;
+}
+
+
+.no-support {
+  margin: 2rem auto;
+  text-align: center;
+  width: 90%;
+}
+
+.music-layer {
+  width: 100vw;
+  height: 108%;
+  position: absolute;
+  background: #fedba8;
+  mix-blend-mode: difference;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+/* Audio Player Styles
+================================================== */
+
+audio {
+  display: none;
+}
+
+#audiowrap,
+#plwrap {
+  margin: 0 auto;
+}
+
+#tracks {
+  font-size: 0;
+  position: relative;
+  text-align: center;
+}
+
+#nowPlay {
+  display: block;
+  font-size: 0;
+}
+
+#nowPlay span {
+  display: inline-block;
+  font-size: 1.05rem;
+  vertical-align: top;
+}
+
+#nowPlay span#npAction {
+  padding: 21px;
+  width: 30%;
+}
+
+#nowPlay span#npTitle {
+  padding: 21px;
+  text-align: right;
+  width: 70%;
+}
+
+#plList li {
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 21px 0;
+}
+
+#plList li:hover {
+  background-color: #000;
+}
+
+.plItem {
+  position: relative;
+}
+
+.plTitle {
+  left: 50px;
+  overflow: hidden;
+  position: absolute;
+  right: 65px;
+  text-overflow: ellipsis;
+  top: 0;
+  white-space: nowrap;
+}
+
+.plNum {
+  padding-left: 21px;
+  width: 25px;
+}
+
+.plLength {
+  padding-left: 21px;
+  position: absolute;
+  right: 21px;
+  top: 0;
+}
+
+.plSel,
+.plSel:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: default !important;
+}
+
+#tracks a {
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.3rem;
+  height: 40px;
+  line-height: 0.2;
+  margin: 0 5px 30px;
+  padding: 12px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+#tracks a:hover,
+#tracks a:active {
+  background-color: rgba(0, 0, 0);
+  color: #fff;
+}
+
+#tracks a::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+
+/* Plyr Overrides
+================================================== */
+.highlighted2 {
+  display: inline-block;
+   background-image: linear-gradient(to bottom, transparent 50%, #ffc0cb 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #ffc0cb65 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #efe6aa 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #fdf5f2 50%);
+ background-image: linear-gradient(to bottom, transparent 50%, #a5b4fc87 50%);
+
+  width: 36.9%;
+}
+
+.plyr--full-ui input[type="range"] {
+  color: #a5b4fc !important;
+}
+
+a.plyr__controls__item.plyr__control:hover,
+.plyr--audio .plyr__controls button:hover,
+.plyr--audio .plyr__controls button.tab-focus:focus,
+.plyr__play-large {
+  background: #a5b4fc !important;
+}
+
+.plyr__controls {
+  height: 67px;
+  background: url("/images/pattern.webp");
+}
+.music-title {
+  font-size: 3.3rem;
+}
+
+.hover-song {
+  border-bottom: 1px solid #6d6d6d;
+  //border-top: 1px solid #6d6d6d;
+
+  padding: 10px;
+  display: flex;
+  font-size: 1.9rem;
+}
+
+
+.plyr__control {
+    color: #000 !important; 
+  }
+
+.plyr--audio .plyr__controls {
+  background: transparent !important;
+  border: none;
+  color: #fff;
+  padding: 20px 20px 20px 13px;
+  width: 100%;
+  border-bottom: 1px solid #000
+}
+
+a.plyr__controls__item.plyr__control:hover,
+.plyr--audio .plyr__controls button:hover,
+.plyr--audio .plyr__controls button.tab-focus:focus,
+.plyr__play-large {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.plyr__progress--played,
+.plyr__volume--display {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.plyr--audio .plyr__progress--buffer,
+.plyr--audio .plyr__volume--display {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.plyr--audio .plyr__progress--buffer {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.plyr__controls .plyr__controls__item.plyr__time {
+  font-size: 14px;
+  margin-left: 7px;
+}
+.plyr--audio .plyr__controls {
+ // box-shadow: rgb(0, 0, 0) 0.3vmin 0.3vmin;
+ // border: 0.2vmin solid rgb(0, 0, 0);
+}
+.player-padding2 {
+  padding: 5% 10%;
+  margin-top: 1%;
+}
+.music-description {
+  font-size: 1.9rem;
+  padding-bottom: 4%;
+}
+.music-video {
+  width: 24.1%;
+  height: 66%;
+  position: absolute;
+  margin-left: 52.5%;
+ 
+  object-fit: cover;
+  object-position: top; 
+  z-index: 1;
+  border: 2px solid #000;
+  margin-top: 1%;
+}
+.music-flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 2%;
+  border: 1px solid #000;
+  padding-bottom: 3.5%;
+}
+.music-text-container {
+  //width: 60%;
+  width: 65%;
+
+}
+.music-text-title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2.2rem;
+  padding-bottom: 4%;
+}
+.music-box-shadow {
+  //box-shadow: rgb(0, 0, 0) 0.3vmin 0.3vmin;
+  //border: 0.2vmin solid rgb(0, 0, 0);
+  font-size: 2.2rem;
+  padding: 15px;
+  margin-top: 3%;
+}
+.music-master-parent2 {
+  position: relative;
+  z-index: -20;
+  margin-top: 0%;
+ // background: #ffe6ea;
+}
+/* Media Queries
+================================================== */
+
+ @media only screen and (max-width: 600px) {
+   #nowPlay span#npAction {
+     display: none;
+   }
+   #nowPlay span#npTitle {
+     display: block;
+     text-align: center;
+     width: 100%;
+   }
+ }
+
+ /* Screen Width Breakpoints */
+ @media screen and (max-width: 320px) {
+   /* CSS rules for devices with a maximum width of 320 pixels */
+   .music-title {
+     font-size: 2.2rem;
+     width: 100%;
+     margin-top: 10%;
+     margin-bottom: 2%;
+   }
+   .player-padding2 {
+     padding: 10% 0%;
+   }
+   .music-flex-container {
+     flex-direction: column;
+     border: none;
+
+   }
+   .music-video {
+     width: 98%;
+     height: 20%;
+     margin-top: -44%;
+     margin-left: -1%;
+     padding: 0;
+   }
+   .music-text-container {
+     width: 100%;
+     padding: 3% 3%;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   .highlighted2 {
+     display: inline-block;
+     width: auto;
+   }
+   .music-text-title {
+     justify-content: center;
+   }
+   .music-description-container {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     text-align: center;
+   }
+   .music-description {
+     font-size: 1.2rem;
+     margin-bottom: 3%;
+   }
+   .plyr--audio .plyr__controls {
+     box-shadow: none;
+   }
+   .music-box-shadow {
+     box-shadow: none;
+     margin-top: 5%;
+   }
+   .hover-song {
+     font-size: 1.2rem;
+   }
+   .music-master-parent2 {
+     height: 125vh;
+     margin-top: 20%;
+   }
+ }
+
+ @media screen and (min-width: 321px) and (max-width: 767px) {
+   /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+   .music-title {
+     font-size: 2.2rem;
+     width: 100%;
+     margin-top: 13%;
+     margin-bottom: 7%;
+   }
+   .player-padding2 {
+     padding: 20% 0%;
+   }
+   .music-flex-container {
+     flex-direction: column;
+     border: none;
+
+   }
+   video {
+    max-width: 100%;
+   }
+   .music-video {
+     width: 98%;
+     height: 50%;
+     margin-top: -44%;
+     margin-left: -1%;
+     padding: 0;
+   }
+   .music-text-container {
+     width: 100%;
+     padding: 3% 3%;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     margin-top: 100%;
+     align-items: center;
+   }
+   .highlighted2 {
+     display: inline-block;
+     width: auto;
+   }
+   .music-text-title {
+     justify-content: center;
+   }
+   .music-description-container {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     text-align: center;
+   }
+   .music-description {
+     font-size: 1.2rem;
+     margin-bottom: 3%;
+   }
+   .plyr--audio .plyr__controls {
+     box-shadow: none;
+   }
+   .music-box-shadow {
+     box-shadow: none;
+     margin-top: 5%;
+   }
+   .hover-song {
+     font-size: 1.2rem;
+   }
+   .music-master-parent2 {
+     height: 125vh;
+     margin-top: 20%;
+   }
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+   /* CSS rules for devices with widths between 769 pixels and 1024 pixels */
+   .music-title {
+     font-size: 3rem;
+     width: 100%;
+     margin-top: -2%;
+   }
+   .player-padding2 {
+     padding: 58% 0%;
+     padding-bottom: 0;
+   }
+   .music-text-container {
+    width: 100%;
+    padding: 3% 0%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35%;
+    align-items: center;
+  }
+   .music-video {
+     width: 98%;
+     height: 37%;
+     margin-top: -44%;
+     margin-left: -1%;
+     padding: 0 7%;
+     border: none;
+   }
+   .music-text-container {
+     width: 100%;
+     padding: 3%;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   .highlighted2 {
+     display: inline-block;
+
+     background-image: linear-gradient(to bottom, transparent 50%, #efe6aa 50%);
+     width: auto;
+   }
+   .music-text-title {
+     justify-content: center;
+   }
+   .music-description-container {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     text-align: center;
+   }
+   .music-description {
+     font-size: 1.7rem;
+     margin-bottom: 3%;
+   }
+   .plyr--audio .plyr__controls {
+     box-shadow: none;
+   }
+   .music-box-shadow {
+     box-shadow: none;
+     margin-top: 5%;
+   }
+   .hover-song {
+     font-size: 1.7rem;
+   }
+   .music-master-parent2 {
+     height: 130vh;
+   }
+ }
+
+ @media screen and (min-width: 1025px) and (max-width: 1440px) {
+   /* CSS rules for devices with a minimum width of 1025 pixels */
+   .music-title {
+     font-size: 3.5rem;
+   }
+   .player-padding2 {
+     padding: 10% 10%;
+   }
+   .music-description {
+     font-size: 1.6rem;
+     padding-bottom: 4%;
+     line-height: 2.5rem;
+   }
+
+   .hover-song {
+       //justify-content: "";
+     font-size: 1.6rem;
+   }
+
+   .music-video {
+     width: 29%;
+     height: 59.1%;
+     padding: 0;
+     margin-left: 48%;
+    // margin-top: -30%;
+   }
+   .highlighted2 {
+     width: auto;
+   }
+   .music-box {
+    width: 91%;
+   }
+ }
+ /* Orientation */
+
+   /* CSS rules for devices in portrait orientation */
+
+   @media screen and (orientation: portrait) {
+     /* CSS rules for devices in portrait orientation */
+
+     @media screen and (min-height: 650px) and (max-height: 668px) {
+       .music-title {
+         margin-top: 17%;
+       }
+       .music-master-parent2 {
+         height: 160vh;
+       }
+     }
+
+     @media screen and (min-height: 700px) and (max-height: 738px) {
+       .music-title {
+         margin-top: 15%;
+       }
+       .music-master-parent2 {
+         height: 140vh;
+       }
+     }
+
+     @media screen and (min-height: 880px) and (max-height: 900px) {
+       .music-master-parent2 {
+         height: 122vh;
+       }
+     }
+
+     @media screen and (min-height: 902px) and (max-height: 935px) { 
+     
+
+         .music-title {
+             margin-top: 14%;
+           }
+         .music-master-parent2 {
+             height: 73vh;
+           }
+
+           .music-text-container {
+            margin-top: 30%;
+           }
+        
+
+
+           @media screen and (min-height: 927px) and (max-height: 935px) { 
+
+            .player-padding2 {
+              padding: 0% 0%;
+            }
+            .music-master-parent2 {
+              height: 65vh;
+            }
+           }
+        }
+
+
+        @media screen and (min-height: 1020px) and (max-height: 1024px) { 
+
+        .player-padding2 {
+          padding: 42% 0%;
+          padding-bottom: 0;
+        }
+      }
+        
+
+        @media screen and (min-height: 1150px) and (max-height: 1180px) { 
+          .music-master-parent2 {
+            height: 120vh;
+          }
+        }
+
+        @media screen and (min-height: 1360px) and (max-height: 1366px) { 
+
+          .music-master-parent2 {
+           height: 120vh;
+         }
+   }
+
+
+   
+
+   }
+ @media screen and (orientation: landscape) {
+   /* CSS rules for devices in landscape orientation */
+ }
+

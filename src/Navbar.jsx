@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { FiMenu, FiArrowRight, FiX, FiChevronDown } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import { TfiDownload } from "react-icons/tfi";
-import { FaUserCircle } from "react-icons/fa";
 import {
   useMotionValueEvent,
   AnimatePresence,
   useScroll,
   motion,
 } from "framer-motion";
+import Resume from '/nedelka-resume.pdf'
+
 
 const Navbar = () => {
   return (
@@ -53,11 +55,13 @@ const FlyoutNav = () => {
 const Logo = ({ color = "black" }) => {
   // Temp logo from https://logoipsum.com/
   return (
+  <>
+  <Link to='/'>
     <div className="flex items-center gap-2">
-      <span className="text-2xl font-bold" style={{ color }}>
+      <span className="text-3xl font-semi-bold" style={{ color }}>
         Nedelka Sotelo
       </span>
-      <svg
+      {/* <svg
         width="50"
         height="39"
         viewBox="0 0 50 39"
@@ -73,8 +77,10 @@ const Logo = ({ color = "black" }) => {
           d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z"
           stopColor={color}
         ></path>
-      </svg>
+      </svg> */}
     </div>
+    </Link>
+  </>  
   );
 };
 
@@ -82,9 +88,11 @@ const Links = () => {
   return (
     <div className="flex items-center gap-6">
       {LINKS.map((l) => (
+        
         <NavLink key={l.text} href={l.href} FlyoutContent={l.component}>
           {l.text}
         </NavLink>
+        
       ))}
     </div>
   );
@@ -99,9 +107,9 @@ const NavLink = ({ children, href, FlyoutContent }) => {
     <div
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
-      className="relative w-fit h-fit"
+      className="relative w-fit h-fit text-2xl"
     >
-      <a href={href} className="relative">
+      <Link to={href} className="relative">
         {children}
         <span
           style={{
@@ -109,7 +117,7 @@ const NavLink = ({ children, href, FlyoutContent }) => {
           }}
           className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out"
         />
-      </a>
+      </Link>
       <AnimatePresence>
         {showFlyout && (
           <motion.div
@@ -132,180 +140,182 @@ const NavLink = ({ children, href, FlyoutContent }) => {
 
 const CTAs = () => {
   return (
-    <div className="flex items-center gap-3">
-      <button className="flex items-center justify-center gap-2 rounded-lg border-2 border-white px-4 py-2 font-semibold text-black transition-colors hover:bg-white hover:text-black">
+    <div className="flex items-center gap-6">
+      <a href={Resume} download style={{border: '1px solid #000', transition: '0.7s all',  }} className=" text-xl hover:scale-105 flex items-center justify-center gap-2 rounded-lg border-2 border-white px-4 py-2 font-semibold text-black transition-colors hover:bg-white hover:text-black">
         {/* <FaUserCircle /> */}
         <TfiDownload />
-        <span>RESUME</span>
-      </button>
-      <button className="rounded-lg border-2 border-indigo-300 bg-indigo-300 px-4 py-2 font-semibold text-black transition-colors hover:border-indigo-600 hover:bg-indigo-600 hover:text-white">
+        <span className="text-xl">RESUME</span>
+      </a>
+      <Link to='/shows'>
+      <button  style={{border: '1px solid #000', transition: '0.7s all'}} className="  text-xl hover:scale-105 rounded-lg border-2 border-indigo-300 bg-indigo-300 px-7 py-2 font-semibold text-black transition-colors">
         SHOWS
       </button>
+      </Link>
     </div>
   );
 };
 
 const AboutUsContent = () => {
-  return (
-    <div className="grid h-fit w-full grid-cols-12 shadow-xl lg:h-72 lg:w-[600px] lg:shadow-none xl:w-[750px]">
-      <div className="col-span-12 flex flex-col justify-between bg-neutral-950 p-6 lg:col-span-4">
-        <div>
-          <h2 className="mb-2 text-xl font-semibold text-white">About us</h2>
-          <p className="mb-6 max-w-xs text-sm text-neutral-400">
-            Placeholder is the world's leading placeholder company.
-          </p>
-        </div>
-        <a
-          href="#"
-          className="flex items-center gap-1 text-xs text-indigo-300 hover:underline"
-        >
-          Learn more <FiArrowRight />
-        </a>
-      </div>
-      <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-white p-6 lg:col-span-8">
-        <a
-          href="#"
-          className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
-        >
-          <h3 className="mb-1 font-semibold">Features</h3>
-          <p className="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quam?
-          </p>
-        </a>
-        <a
-          href="#"
-          className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
-        >
-          <h3 className="mb-1 font-semibold">Testimonials</h3>
-          <p className="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quam?
-          </p>
-        </a>
-        <a
-          href="#"
-          className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
-        >
-          <h3 className="mb-1 font-semibold">Press</h3>
-          <p className="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quam?
-          </p>
-        </a>
-        <a
-          href="#"
-          className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
-        >
-          <h3 className="mb-1 font-semibold">Blog</h3>
-          <p className="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quam?
-          </p>
-        </a>
-      </div>
-    </div>
-  );
+  // return (
+  //   <div className="grid h-fit w-full grid-cols-12 shadow-xl lg:h-72 lg:w-[600px] lg:shadow-none xl:w-[750px]">
+  //     <div className="col-span-12 flex flex-col justify-between bg-neutral-950 p-6 lg:col-span-4">
+  //       <div>
+  //         <h2 className="mb-2 text-xl font-semibold text-white">About us</h2>
+  //         <p className="mb-6 max-w-xs text-sm text-neutral-400">
+  //           Placeholder is the world's leading placeholder company.
+  //         </p>
+  //       </div>
+  //       <a
+  //         href="#"
+  //         className="flex items-center gap-1 text-xs text-indigo-300 hover:underline"
+  //       >
+  //         Learn more <FiArrowRight />
+  //       </a>
+  //     </div>
+  //     <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-white p-6 lg:col-span-8">
+  //       <a
+  //         href="#"
+  //         className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
+  //       >
+  //         <h3 className="mb-1 font-semibold">Features</h3>
+  //         <p className="text-xs">
+  //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quam?
+  //         </p>
+  //       </a>
+  //       <a
+  //         href="#"
+  //         className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
+  //       >
+  //         <h3 className="mb-1 font-semibold">Testimonials</h3>
+  //         <p className="text-xs">
+  //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quam?
+  //         </p>
+  //       </a>
+  //       <a
+  //         href="#"
+  //         className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
+  //       >
+  //         <h3 className="mb-1 font-semibold">Press</h3>
+  //         <p className="text-xs">
+  //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quam?
+  //         </p>
+  //       </a>
+  //       <a
+  //         href="#"
+  //         className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
+  //       >
+  //         <h3 className="mb-1 font-semibold">Blog</h3>
+  //         <p className="text-xs">
+  //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quam?
+  //         </p>
+  //       </a>
+  //     </div>
+  //   </div>
+  // );
 };
 
-const PricingContent = () => {
-  return (
-    <div className="w-full bg-white p-6 shadow-none lg:w-[250px] lg:shadow-xl">
-      <div className="grid grid-cols-2 lg:grid-cols-1">
-        <div className="mb-3 space-y-3">
-          <h3 className="font-semibold">For Individuals</h3>
-          <a href="#" className="block text-sm hover:underline">
-            Introduction
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Pay as you go
-          </a>
-        </div>
-        <div className="mb-6 space-y-3">
-          <h3 className="font-semibold">For Companies</h3>
-          <a href="#" className="block text-sm hover:underline">
-            Startups
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            SMBs
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Enterprise
-          </a>
-        </div>
-      </div>
-      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
-        Contact sales
-      </button>
-    </div>
-  );
-};
+// const PricingContent = () => {
+//   return (
+//     <div className="w-full bg-white p-6 shadow-none lg:w-[250px] lg:shadow-xl">
+//       <div className="grid grid-cols-2 lg:grid-cols-1">
+//         <div className="mb-3 space-y-3">
+//           <h3 className="font-semibold">For Individuals</h3>
+//           <a href="#" className="block text-sm hover:underline">
+//             Introduction
+//           </a>
+//           <a href="#" className="block text-sm hover:underline">
+//             Pay as you go
+//           </a>
+//         </div>
+//         <div className="mb-6 space-y-3">
+//           <h3 className="font-semibold">For Companies</h3>
+//           <a href="#" className="block text-sm hover:underline">
+//             Startups
+//           </a>
+//           <a href="#" className="block text-sm hover:underline">
+//             SMBs
+//           </a>
+//           <a href="#" className="block text-sm hover:underline">
+//             Enterprise
+//           </a>
+//         </div>
+//       </div>
+//       <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+//         Contact sales
+//       </button>
+//     </div>
+//   );
+// };
 
 const CareersContent = () => {
-  return (
-    <div className="grid w-full grid-cols-12 shadow-xl lg:w-[750px]">
-      <div className="col-span-12 flex flex-col justify-between bg-indigo-600 p-6 lg:col-span-4">
-        <div className="mb-6">
-          <h2 className="mb-2 text-xl font-semibold text-white">Careers</h2>
-          <p className="text-sm text-indigo-100">
-            Placeholder was rated a top place to work by Placeholder.
-          </p>
-        </div>
-        <a
-          href="#"
-          className="flex items-center gap-1 text-xs text-indigo-200 hover:underline"
-        >
-          Careers site <FiArrowRight />
-        </a>
-      </div>
-      <div className="col-span-12 grid grid-cols-2 gap-3 bg-white p-6 lg:col-span-8 lg:grid-cols-3">
-        <div className="space-y-3">
-          <h3 className="font-semibold">Business</h3>
-          <a href="#" className="block text-sm hover:underline">
-            Marketing
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Finance
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Legal
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Sales
-          </a>
-        </div>
-        <div className="space-y-3">
-          <h3 className="font-semibold">Engineering</h3>
-          <a href="#" className="block text-sm hover:underline">
-            Full stack
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Dev ops
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            QA
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Data
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Machine learning
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Management
-          </a>
-        </div>
-        <div className="space-y-3">
-          <h3 className="font-semibold">More</h3>
-          <a href="#" className="block text-sm hover:underline">
-            Support
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Office
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Other
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+  // return (
+  //   <div className="grid w-full grid-cols-12 shadow-xl lg:w-[750px]">
+  //     <div className="col-span-12 flex flex-col justify-between bg-indigo-600 p-6 lg:col-span-4">
+  //       <div className="mb-6">
+  //         <h2 className="mb-2 text-xl font-semibold text-white">Careers</h2>
+  //         <p className="text-sm text-indigo-100">
+  //           Placeholder was rated a top place to work by Placeholder.
+  //         </p>
+  //       </div>
+  //       <a
+  //         href="#"
+  //         className="flex items-center gap-1 text-xs text-indigo-200 hover:underline"
+  //       >
+  //         Careers site <FiArrowRight />
+  //       </a>
+  //     </div>
+  //     <div className="col-span-12 grid grid-cols-2 gap-3 bg-white p-6 lg:col-span-8 lg:grid-cols-3">
+  //       <div className="space-y-3">
+  //         <h3 className="font-semibold">Business</h3>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Marketing
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Finance
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Legal
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Sales
+  //         </a>
+  //       </div>
+  //       <div className="space-y-3">
+  //         <h3 className="font-semibold">Engineering</h3>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Full stack
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Dev ops
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           QA
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Data
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Machine learning
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Management
+  //         </a>
+  //       </div>
+  //       <div className="space-y-3">
+  //         <h3 className="font-semibold">More</h3>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Support
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Office
+  //         </a>
+  //         <a href="#" className="block text-sm hover:underline">
+  //           Other
+  //         </a>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
 };
 
 const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
@@ -416,21 +426,23 @@ export default Navbar;
 const LINKS = [
   {
     text: "HOME",
-    href: "#",
+    href: "/home",
     component: AboutUsContent,
   },
-  {
-    text: "ABOUT",
-    href: "#",
-    component: PricingContent,
-  },
-  {
-    text: "ART",
-    href: "#",
-    component: CareersContent,
-  },
+  // {
+  //   text: "ABOUT",
+  //   href: "/about",
+  //   component: PricingContent,
+  // },
+  // {
+  //   text: "ART",
+  //   href: "/music",
+  //   component: CareersContent,
+  // },
   {
     text: "CONTACT",
-    href: "#",
+    href: "/contact",
+    component: CareersContent,
+
   },
 ];

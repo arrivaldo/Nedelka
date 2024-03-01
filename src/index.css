@@ -4,6 +4,7 @@
 /* @import 'animate.css'; */
 @import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,8 +26,9 @@ html, body {
 body{
 
 font-family: 'Inter', sans-serif;
-font-family: 'Onest', sans-serif;;
+/* font-family: 'Onest', sans-serif;; */
 background: #e3e3e3;
 background: #fff;
 overflow-x: hidden;
+
 }

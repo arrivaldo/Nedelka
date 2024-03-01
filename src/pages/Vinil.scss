@@ -1,0 +1,277 @@
+
+.music-player-container {
+    display: inline-block;
+    height: 370px;
+    position: absolute;
+    min-width: 460px;
+   // left: 50%;
+   //  /top: 50%;
+
+
+
+
+
+    &:after {
+        background-color: rgba(0, 0, 0, 0.8);
+        bottom: 190px;
+      //  bottom: 5%;
+        content: ' ';
+        display: block;
+        height: 10px;
+        height: 2px;
+      //  left: 19px;
+        left: 147%;
+        position: absolute;
+        transform: rotate(-3deg);
+        width: 70%;
+        top: 131%;
+       // width: 20%;
+        z-index: 0;
+    }
+}
+
+.music-player {
+    background-color: #fff;
+    height: 370px;
+    padding: 40px 250px 40px 40px;
+    position: absolute;
+    text-align: right;
+    width: 460px;
+    z-index: 3;
+}
+
+.player-content-container {
+    top: 50%;
+    position: relative;
+}
+
+.artist-name {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 0.75em 0;
+}
+
+.album-title {
+    font-weight: 200;
+    font-size: 24px;
+    margin: 0 0 1.75em 0;
+}
+
+.song-title {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0 0 1.5em 0;
+}
+
+.album {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.65);
+    height: 100%;
+    margin-left: 0%;
+    margin-top: 27px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.album-art {
+     background: #fff url('/images/vf57.png') center / cover no-repeat;
+  background: #fff url('/images/nede2.jpeg') center / cover no-repeat;
+   //background: #fff url('/images/nede10.jpeg') center / cover no-repeat;
+   //  background: #fff url('/images/vf65.png') top / cover no-repeat;
+   // background: #fff url('/images/vf67.jpeg') top / cover no-repeat;
+
+   height: 500px;
+    position: relative;
+    width: 500px;
+    z-index: 10;
+    border: .5vmin solid #05060f;
+}
+
+.vinyl {
+    animation: spin 70s linear infinite;
+    transition: all 500ms;
+    background-image: url('https:s3-us-west-2.amazonaws.com/s.cdpn.io/83141/vinyl.png'),
+                      url('/images/forest.png');
+    background-position: center, center;
+    background-size: cover, 40% auto;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    height: 450px;
+    left: 55%;
+    position: absolute;
+    top: 25px;
+    width: 450px;
+    z-index: 5;
+    will-change: transform, left;
+    border: .5vmin solid #05060f;
+
+
+    &.is-playing {
+        left: 52%;
+    }
+}
+
+.music-player-controls {
+    text-align: center;
+}
+
+[class^="control-"] {
+    border-radius: 100%;
+    display: inline-block;
+    height: 44px;
+    margin: 0 3px;
+    width: 44px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.control-play {
+    background: transparent url('https:s3-us-west-2.amazonaws.com/s.cdpn.io/83141/play.svg') center / cover no-repeat;
+
+    &.is-playing {
+        background: transparent url('https:s3-us-west-2.amazonaws.com/s.cdpn.io/83141/pause.svg') center / cover no-repeat;
+    }
+}
+
+.control-forwards {
+    background: transparent url('https:s3-us-west-2.amazonaws.com/s.cdpn.io/83141/forwards.svg') center / cover no-repeat;
+}
+
+.control-back {
+    background: transparent url('https:s3-us-west-2.amazonaws.com/s.cdpn.io/83141/backwards.svg') center / cover no-repeat;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+  /* Screen Width Breakpoints */
+@media screen and (max-width: 320px) { 
+   /* CSS rules for devices with a maximum width of 320 pixels */ 
+   .album-art {
+  
+       height: 500px;
+       position: relative;
+       width: 300px;
+       z-index: 10;
+       border: .5vmin solid #05060f;
+    }
+    
+    .album {
+        box-shadow: none;
+    }
+    .vinyl {
+       display: none;
+    }
+    .music-player-container {
+       
+        &:after {
+            display: none;
+        }
+    }
+ }
+ 
+ @media screen and (min-width: 321px) and (max-width: 767px) { 
+   /* CSS rules for devices with widths between 321 pixels and 768 pixels */ 
+     
+.album-art {
+  
+  height: 500px;
+  position: relative;
+  width: 300px;
+  z-index: 10;
+  border: .5vmin solid #05060f;
+}
+
+.album {
+   box-shadow: none;
+}
+.vinyl {
+  display: none;
+}
+.music-player-container {
+  
+   &:after {
+       display: none;
+   }
+}
+ }
+ 
+ @media screen and (min-width: 768px) and (max-width: 1024px) { 
+   /* CSS rules for devices with widths between 769 pixels and 1024 pixels */ 
+   .album-art {
+  
+       height: 500px;
+       position: relative;
+       width: 610px;
+       z-index: 10;
+       border: .5vmin solid #05060f;
+    }
+    .album {
+       box-shadow: none;
+   }
+   .vinyl {
+       display: none;
+   }
+     
+   .music-player-container {
+  
+       &:after {
+           display: none;
+       }
+   }
+ }
+ 
+ @media screen and (min-width: 1025px) and (max-width: 1440px){ 
+   /* CSS rules for devices with a minimum width of 1025 pixels */ 
+   .album-art {
+  
+       height: 500px;
+       position: relative;
+       width: 340px;
+       z-index: 10;
+       border: .5vmin solid #05060f;
+    }
+    .album {
+       box-shadow: none;
+   }
+   .vinyl {
+  
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+       height: 450px;
+       left: 15%;
+       top: 25px;
+       width: 450px;
+   }
+   
+   .about-parent {
+       height: 117vh;
+   }
+   .music-player-container {
+      
+       &:after {
+           display: none;
+       }
+   }
+ }
+
+
+ /* Orientation */
+ @media screen and (orientation: portrait) { 
+   /* CSS rules for devices in portrait orientation */ 
+ }
+ 
+ @media screen and (orientation: landscape) { 
+   /* CSS rules for devices in landscape orientation */ 
+ }

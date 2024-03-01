@@ -7,8 +7,14 @@ export default {
   theme: {
     extend: {
       maxWidth: {
-        '7xl': '96.5rem', // or any value you prefer
+        '7xl': '96.5rem',
+         // or any value you prefer
       },
+      screens: {
+        'lg': '1420px',
+        'xl': '1450px'
+      },
+
     },
   },
   plugins: [],

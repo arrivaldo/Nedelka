@@ -1,0 +1,34 @@
+.border-card {
+    padding: 25px;
+  border: 0.2vmin solid rgb(5, 6, 15);
+  box-shadow: rgb(5, 6, 15) 0.2rem 0.2rem;
+}
+
+/* Screen Width Breakpoints */
+@media screen and (max-width: 320px) { 
+  /* CSS rules for devices with a maximum width of 320 pixels */ 
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) { 
+  /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+ 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+  /* CSS rules for devices with widths between 769 pixels and 1024 pixels */ 
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){ 
+  /* CSS rules for devices with a minimum width of 1025 pixels */ 
+}
+
+/* Orientation */
+@media screen and (orientation: portrait) { 
+  /* CSS rules for devices in portrait orientation */ 
+}
+
+@media screen and (orientation: landscape) { 
+  /* CSS rules for devices in landscape orientation */ 
+}

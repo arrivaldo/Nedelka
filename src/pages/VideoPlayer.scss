@@ -1,0 +1,472 @@
+/*
+🎬 Video playlist UI Design like Skillshare With Vanilla JavaScript
+👨🏻‍⚕️ By: Coding Design
+
+You can do whatever you want with the code. However if you love my content, you can subscribed my YouTube Channel
+🌎link: www.youtube.com/codingdesign
+*/
+
+.videoCont2 {
+    position:relative;
+    z-index: 100000000;
+   // background: "#fff",
+    height: 78vh;
+    padding: 5% 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    // padding: 10% 0,
+    //margin-top: 5%;
+   // background: '#fdf5f2',
+ //  background: #ecebf5
+}
+
+.highlighted4 {
+    display: inline-block;
+  // background-image: linear-gradient(to bottom, transparent 50%, #ffc0cb 50%);
+   background-image: linear-gradient(to bottom, transparent 50%, #ffc0cb65 50%);
+   //background-image: linear-gradient(to bottom, transparent 50%, #efe6aa 50%);
+   background-image: linear-gradient(to bottom, transparent 50%, #fdf5f2 50%);
+   background-image: linear-gradient(to bottom, transparent 50%, #a5b4fc66 50%);
+
+
+
+   width: 66.9%;
+ }
+
+ .playlist-title {
+    padding-left: 1.5rem;
+    font-size: 3.3rem
+ }
+
+.containerVideo {
+    width: 81.3vw;
+
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    gap: 1rem;
+    
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+    // background: #fbd3e9; /* fallback for old browsers */
+    // background: -webkit-linear-gradient(
+    //   to right,
+    //   #bb377d,
+    //   #fbd3e9
+    // ); /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(
+    //   to right,
+    //   #bb377d,
+    //   #fbd3e9
+    //   ); 
+}
+.video-track {
+    border-bottom: 1px solid #000;
+}
+
+.video-track:nth-child(1){
+    border-top: 1px solid #000;
+}
+
+@media screen and (max-width: 990px) {
+    .containerVideo {
+        grid-template-columns: 1fr;
+    }
+}
+
+.main-video, .video-playlist {
+    width: 100%;
+    height: 33rem;
+}
+
+.titleVid {
+    font-size: 36px;
+    margin-top: 1%;
+}
+
+
+.video-playlist .title {
+    padding-left: 1.5rem;
+}
+.title {
+    font-size: 3.7rem;
+}
+
+.video-playlist > p {
+    padding: 1rem;
+    color: var(--secondary);
+    padding-left: 5%;
+}
+
+.video-playlist .videos{
+    height: 70%;
+    overflow-y: auto;
+    font-size: 24px;
+}
+
+.video-playlist .videos::-webkit-scrollbar {
+    width: .4rem;
+    border-radius: .4rem;
+    background-color: #0005;
+}
+
+.video-playlist .videos::-webkit-scrollbar-thumb {
+    border-radius: .4rem;
+    background-color: #fff;
+}
+
+.video-playlist .videos .video {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 1rem;
+    margin-top: .1rem;
+    cursor: pointer;
+
+    border-radius: .5rem;
+}
+
+.video-playlist .videos .video:hover {
+    background-color: #d1d1f2;
+}
+
+.video-playlist .videos .video.active {
+    background-color: #d1d1f2;
+    color: #000;
+}
+
+.main-video video {
+    width: 100%;
+    border-radius: .5rem;
+    height: 100%;
+}
+
+.video img {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 1.5rem;
+    height: 1.5rem;
+    
+   // filter: invert(100%);
+}
+
+.video-playlist .videos .video.active img {
+   // filter: invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
+}
+
+.video-playlist {
+   // background: #a5b4fc;
+    box-shadow: rgb(0, 0, 0) 0.3vmin 0.3vmin;
+    border: 0.2vmin solid rgb(0, 0, 0);
+    background: #ecebf5;
+
+}
+
+.video p {
+   margin-left: 2.5rem;
+   font-size: 1.9rem;
+
+}
+
+.video h3 {
+    width: 23rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    //font: 100 1rem sans-serif;
+    padding: 0 .5rem;
+    font-size: 1.9rem;
+}
+
+.song-item {
+    display: flex;
+    justify-content: space-between
+
+}
+
+
+/* Screen Width Breakpoints */
+@media screen and (max-width: 320px) { 
+    /* CSS rules for devices with a maximum width of 320 pixels */ 
+    .videoCont2 {
+        padding: 0% 0;
+        height: auto;
+      }
+      .main-video {
+        width: 100%;
+        height: 18rem;
+      }
+      .video-playlist{ 
+        //margin-top: 35%;
+      }
+      .containerVideo {
+        //padding: 0;
+        width: 100%;
+        gap: 9.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .titleVid {
+        font-size: 1.9rem;
+        text-align: center;
+        margin-top: 5%;
+      }
+      .video-playlist {
+        width: 100%;
+      }
+      .video h3 {
+        font-size: 1.2rem;
+      }
+      .playlist-title{
+        font-size: 2.2rem;
+        padding: 0;
+        text-align: center;
+      }
+    
+      .video-playlist > p {
+        padding-left: 0;
+        text-align: center;
+      }
+     
+      .video-duration {
+        display: none;
+      }
+      .video-track {
+        display: none;
+      }
+      .video-index {
+        display: none;
+      }
+      .time{
+        display: none;
+      }
+      .video-playlist .title {
+        padding-left: 1.5rem;
+      }
+      .video-playlist {
+        border: none;
+        box-shadow: none;
+      }
+    
+      .video-playlist .videos {
+        margin-top: 4%;
+      }
+    
+  }
+  
+  @media screen and (min-width: 321px) and (max-width: 767px) { 
+    /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+  .videoCont2 {
+    padding: 15% 0;
+    height: auto;
+  }
+  .main-video {
+    width: 100%;
+    height: 18rem;
+  }
+  .video-playlist{ 
+    //margin-top: 35%;
+  }
+  .containerVideo {
+    //padding: 0;
+    width: 100%;
+    gap: 9.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .titleVid {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .video-playlist {
+    width: 100%;
+  }
+  .video h3 {
+    font-size: 1.2rem;
+  }
+  .playlist-title{
+    font-size: 2.2rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  .video-playlist > p {
+    padding-left: 0;
+    text-align: center;
+  }
+ 
+  .video-duration {
+    display: none;
+  }
+  .video-track {
+    display: none;
+  }
+  .video-index {
+    display: none;
+  }
+  .time{
+    display: none;
+  }
+  .video-playlist .title {
+    padding-left: 1.5rem;
+  }
+  .video-playlist {
+    border: none;
+    box-shadow: none;
+  }
+
+  .video-playlist .videos {
+    margin-top: 4%;
+  }
+  .title {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+}
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) { 
+    /* CSS rules for devices with widths between 769 pixels and 1024 pixels */ 
+
+        .videoCont2 {
+            height: 130vh;
+           // margin-top: 10%;
+        }
+        .containerVideo {
+            //padding: 0;
+            width: 100%;
+            gap: 9.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          .video-playlist > p {
+            padding-left: 0;
+            text-align: center;
+          }
+          .titleVid {
+           
+            text-align: center;
+          
+          }
+          .playlist-title{
+            font-size: 3rem;
+
+            text-align: center;
+          }
+          .video h3 {
+            font-size: 1.7rem;
+          }
+          .time {
+            font-size: 1.7rem;
+          }
+          .video-index {
+            font-size: 1.7rem;
+          }
+
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width: 1440px){ 
+    /* CSS rules for devices with a minimum width of 1025 pixels */
+
+.playlist-title{
+            font-size: 3rem;
+
+            //text-align: center;
+          }
+          .video h3 {
+            font-size: 1.7rem;
+          }
+          .time {
+            font-size: 1.7rem;
+          }
+          .video-index {
+            font-size: 1.7rem;
+          }
+
+          .video-playlist {
+            height: 30rem;
+            margin-top: 14%;
+            //margin-top: 15%;
+          }
+        //   .video-playlist .videos .video {
+        //     padding:  0 4%;
+        //   }
+        .song-item {
+            padding-left: 3rem;
+            justify-content: none;;
+            align-items: center;
+        }
+        .videoCont2 {
+            padding: 1% 0;
+            height: 80vh;
+        }
+      
+
+  }
+  
+  /* Orientation */
+  @media screen and (orientation: portrait) { 
+    /* CSS rules for devices in portrait orientation */ 
+
+    @media screen and (min-height: 902px) and (max-height: 935px) { 
+     
+      .videoCont2 {
+        margin-top: 22%;
+      }
+    }
+
+
+
+    @media screen and (min-height: 800px) and (max-height: 820px) { 
+        .containerVideo{
+            gap:18%;
+        }
+        .videoCont2 {
+            margin-top: 23%;
+        }
+        .main-video{
+            height: 24rem;
+        }
+    }
+
+    @media screen and (min-height: 1020px) and (max-height: 1024px) { 
+
+    }
+
+    @media screen and (min-height: 1150px) and (max-height: 1180px) { 
+      .videoCont2 {
+        height: 110vh;
+      }
+    }
+
+    @media screen and (min-height: 1360px) and (max-height: 1366px) { 
+      .videoCont2 {
+        height: 100vh;
+      }
+    }
+
+    
+
+  }
+  
+  @media screen and (orientation: landscape) { 
+    /* CSS rules for devices in landscape orientation */ 
+  }
+  

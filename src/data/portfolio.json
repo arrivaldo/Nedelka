@@ -1,0 +1,48 @@
+{
+    "portfolio": [
+        {
+            "cover": "/images/g63.jpeg",
+
+            "title": "Real New York Artist ",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
+            "items": ["React", "JSX", "Tailwind", "Jest"],
+            "url": "http://google.com",
+            "date": "2015-2018"
+        },
+        
+       
+        {
+            "cover": "/images/g27.jpeg",
+
+            "title": "VS Code Extension",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
+            "items": ["React", "JSX", "Tailwind", "Jest"],
+            "url": "http://google.com",
+            "date": "2018-2019"
+
+        },
+     
+        {
+            "cover": "/images/g24.jpeg",
+
+            "title": "Full MERN Application",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
+            "items": ["React", "JSX", "Tailwind", "Jest"],
+            "url": "http://google.com",
+            "date": "2020-2022"
+
+        },
+        {               
+            "cover": "/images/g6.jpeg",
+
+            "title": "Library Application",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
+            "items": ["React", "JSX", "Tailwind", "Jest"],
+            "url": "http://google.com",
+            "date": "2023-2024"
+
+        }
+     
+     
+    ]
+}
