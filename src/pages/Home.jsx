@@ -30,7 +30,7 @@ const Home = () => {
             // padding: "7% 10%",
             top: "50px",
           }}
-          className="main-padding overflow-hidden sticky z-0 grid grid-cols-3 grid-rows-3 gap-4 "
+          className="main-padding sticky z-0 grid grid-cols-3 grid-rows-3 gap-4 "
         >
           <div
             style={{ height: "100vh" }}
