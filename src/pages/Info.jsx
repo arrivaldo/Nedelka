@@ -75,6 +75,7 @@ const Info = () => {
             //    initial= {{y: "100%"}}
             //    animate={{y:0}} 
             //    transition ={{delay: '0.5', duration: 0.5}}
+          
               className="signing"
                 style={{
                  

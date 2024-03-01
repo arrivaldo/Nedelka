@@ -99,16 +99,26 @@ const Copy = ({ scrollYProgress }) => {
         </motion.p>
       </div>
 
-      <div className="buttons">
+      <div className="buttons"
+            
+      >
         <Link to="/music">
-          <button className="neumorphic">
+          <motion.button 
+           animate={{ opacity: 1 }}
+           initial={{ opacity: 0 }}
+           transition={{ delay: "1.7", duration: 0.9 }}
+          className="neumorphic">
             <span>MUSIC</span>
-          </button>
+          </motion.button>
         </Link>
         <Link to="/acting">
-          <button className="neumorphic">
+          <motion.button
+           animate={{ opacity: 1 }}
+           initial={{ opacity: 0 }}
+           transition={{ delay: "1.7", duration: 0.9 }}
+          className="neumorphic">
             <span>ACTING</span>
-          </button>
+          </motion.button>
         </Link>
       </div>
     </motion.div>
