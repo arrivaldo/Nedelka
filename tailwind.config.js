@@ -11,6 +11,7 @@ export default {
          // or any value you prefer
       },
       screens: {
+        'xs': '500px',
         'lg': '1420px',
         'xl': '1450px'
       },

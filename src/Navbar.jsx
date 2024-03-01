@@ -141,7 +141,7 @@ const NavLink = ({ children, href, FlyoutContent }) => {
 const CTAs = () => {
   return (
     <div className="flex items-center gap-6">
-      <a href={Resume} download style={{border: '1px solid #000', transition: '0.7s all',  }} className=" text-xl hover:scale-105 flex items-center justify-center gap-2 rounded-lg border-2 border-white px-4 py-2 font-semibold text-black transition-colors hover:bg-white hover:text-black">
+      <a href={Resume} download style={{border: '1px solid #000', transition: '0.7s all',  }} className=" text-xl hover:scale-105 flex items-center justify-center gap-2 rounded-lg border-2 border-white px-4 py-2 font-semibold text-black transition-colors hover:bg-white hover:text-black xs:text-white md:text-black">
         {/* <FaUserCircle /> */}
         <TfiDownload />
         <span className="text-xl">RESUME</span>
@@ -328,7 +328,7 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
           onClick={() => setOpen((pv) => !pv)}
         >
- <Link to={href} onClick={(e) => {e.stopPropagation(); setMenuOpen(false)}}>          
+ <Link to='/home' onClick={(e) => {e.stopPropagation(); setMenuOpen(false)}}>          
            
             {children}
           </Link>
@@ -343,7 +343,7 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
           </motion.div>
         </div>
       ) : (
-        <Link to={href} onClick={(e) => {e.stopPropagation(); setMenuOpen(false)}}          
+        <Link to='/contact' onClick={(e) => {e.stopPropagation(); setMenuOpen(false)}}          
        
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
         >
