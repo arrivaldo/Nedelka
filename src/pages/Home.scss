@@ -113,6 +113,9 @@
   .main-header-container {
     padding: 0 6.8%;
   }
+  .second-circle {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 767px) {
@@ -123,6 +126,9 @@
     line-height: 1.5rem;
     //  display: none;
     // text-wrap: balance;
+  }
+  .second-circle {
+    display: none;
   }
   .main-text2 {
     display: block;
