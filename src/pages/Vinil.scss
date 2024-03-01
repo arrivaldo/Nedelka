@@ -90,7 +90,7 @@
 .vinyl {
     animation: spin 70s linear infinite;
     transition: all 500ms;
-    background-image: url('images/vinyl.png'),
+    background-image: url('/images/vinyl.png'),
                       url('/images/forest.png');
     background-position: center, center;
     background-size: cover, 40% auto;
