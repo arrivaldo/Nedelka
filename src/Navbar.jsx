@@ -146,7 +146,9 @@ const CTAs = () => {
         <TfiDownload />
         <span className="text-xl">RESUME</span>
       </a>
-      <Link to='/shows'>
+      <Link to='/shows' 
+       onClick={(e) => {e.stopPropagation(); setMenuOpen(false)}}>          
+       
       <button  style={{border: '1px solid #000', transition: '0.7s all'}} className="  text-xl hover:scale-105 rounded-lg border-2 border-indigo-300 bg-indigo-300 px-7 py-2 font-semibold text-black transition-colors">
         SHOWS
       </button>
