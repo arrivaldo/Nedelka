@@ -328,7 +328,8 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
           onClick={() => setOpen((pv) => !pv)}
         >
- <Link to='/home' onClick={(e) => {e.stopPropagation(); setMenuOpen(false)}}>          
+ <Link             to={href}
+ onClick={(e) => {e.stopPropagation(); setMenuOpen(false)}}>          
            
             {children}
           </Link>
@@ -343,7 +344,8 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
           </motion.div>
         </div>
       ) : (
-        <Link to='/contact' onClick={(e) => {e.stopPropagation(); setMenuOpen(false)}}          
+        <Link            to={href}
+        onClick={(e) => {e.stopPropagation(); setMenuOpen(false)}}          
        
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
         >
