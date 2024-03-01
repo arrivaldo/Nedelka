@@ -17,7 +17,11 @@ const About4 = () => {
         style={{}}
       ></motion.div>
 
-      <section
+      <motion.section
+      initial={{ y: "100%", opacity: 0 }}
+      animate={{ y: "0", opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      exit={{ opacity: 0 }}
         className="about-padding"
         style={
           {
@@ -81,7 +85,7 @@ const About4 = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

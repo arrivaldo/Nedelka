@@ -53,7 +53,7 @@
 }
 
 .cont-sect {
-  padding: 0% 10%;  margin-top: 8%
+  padding: 0% 10%;  margin-top: 12%
 }
 
 .contact-form {
@@ -264,7 +264,7 @@
 
   .contact-title {
     font-size: 2.2rem;
-    margin-top:15%;
+    margin-top:25%;
   }
   .contact-main-section {
     height: 100vh;
@@ -273,7 +273,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) { 
   /* CSS rules for devices with widths between 769 pixels and 1024 pixels */ 
-
+.contact-title {
+  margin-top: 10%;
+}
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px){ 

@@ -10,10 +10,13 @@ export default {
         '7xl': '96.5rem',
          // or any value you prefer
       },
+     
       screens: {
         // 'xs': '200px',
         'lg': '1420px',
-        'xl': '1450px'
+        'xl': '1450px',
+        '2md': '1000px'
+
       },
 
     },

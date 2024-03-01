@@ -11,7 +11,7 @@ const Culture = () => {
 
             <section className='flyer-container'>
 
-                <img src='/images/g44.jpeg' effect="blur" alt='Flyer 1'></img>
+                <img style={{border: '1px solid #000'}} src='/images/g44.jpeg' effect="blur" alt='Flyer 1'></img>
                 
                 <img src='/images/g56.jpeg'effect="blur" alt='Flyer 2'></img>
                 <img src='/images/g66.jpeg'effect="blur" alt='Flyer 3'></img>

@@ -141,14 +141,13 @@ const NavLink = ({ children, href, FlyoutContent }) => {
 const CTAs = () => {
   return (
     <div className="flex items-center gap-6">
-      <a href={Resume} download style={{border: '1px solid #000', transition: '0.7s all',  }} className=" text-xl hover:scale-105 flex items-center justify-center gap-2 rounded-lg border-2 border-white px-4 py-2 font-semibold text-black transition-colors hover:bg-white hover:text-black xs:text-white md:text-black">
+      <a href={Resume} download style={{border: '1px solid #000', transition: '0.7s all',  }} className=" text-xl hover:scale-105 flex items-center justify-center gap-2 rounded-lg border-2 border-white px-4 py-2 font-semibold text-white  2md:text-white lg:text-black  transition-colors hover:bg-white hover:text-black xs:text-white ">
         {/* <FaUserCircle /> */}
         <TfiDownload />
         <span className="text-xl">RESUME</span>
       </a>
       <Link to='/shows' 
-       onClick={() => setOpen(false)}>          
-       
+>       
       <button  style={{border: '1px solid #000', transition: '0.7s all'}} className="  text-xl hover:scale-105 rounded-lg border-2 border-indigo-300 bg-indigo-300 px-7 py-2 font-semibold text-black transition-colors">
         SHOWS
       </button>
