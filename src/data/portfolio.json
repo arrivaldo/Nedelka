@@ -35,7 +35,7 @@
         {               
             "cover": "/images/g6.jpeg",
 
-            "title": "Arts Curator",
+            "title": "Art Curator",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
             "items": ["React", "JSX", "Tailwind", "Jest"],
             "url": "http://google.com",
