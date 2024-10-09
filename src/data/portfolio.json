@@ -3,7 +3,7 @@
         {
             "cover": "/images/g63.jpeg",
 
-            "title": "Real New York Artist ",
+            "title": "Singer-Songwriter",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
             "items": ["React", "JSX", "Tailwind", "Jest"],
             "url": "http://google.com",
@@ -14,7 +14,7 @@
         {
             "cover": "/images/g27.jpeg",
 
-            "title": "VS Code Extension",
+            "title": "New York Artist",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
             "items": ["React", "JSX", "Tailwind", "Jest"],
             "url": "http://google.com",
@@ -25,7 +25,7 @@
         {
             "cover": "/images/g24.jpeg",
 
-            "title": "Full MERN Application",
+            "title": "Dynamic Actress",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
             "items": ["React", "JSX", "Tailwind", "Jest"],
             "url": "http://google.com",
@@ -35,7 +35,7 @@
         {               
             "cover": "/images/g6.jpeg",
 
-            "title": "Library Application",
+            "title": "Arts Curator",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
             "items": ["React", "JSX", "Tailwind", "Jest"],
             "url": "http://google.com",

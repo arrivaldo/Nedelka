@@ -11,7 +11,7 @@ const Cards = () => {
       <Link to='/music'>
         <Card
           heading="Singer-songwriter"
-          description="Through the language of music, I paint portraits of the human experience, capturing moments of emotion and vulnerability. Let the songs be your guide through life."
+          description="Through the language of music, I paint portraits of the human experience, capturing moments of emotion and vulnerability. Let the harmonies be your daily compass."
           imgSrc="/images/nede2.jpeg"
           imgBg="#bdc0e2"
         />
