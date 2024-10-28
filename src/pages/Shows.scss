@@ -7,3 +7,34 @@
     padding: 0 10%;
     margin-top: 7%;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){ 
+
+    .flyer-container-shows{
+
+        margin-top: 30%;
+
+    }
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 600px){ 
+
+    .flyer-container-shows{
+
+        margin-top: 22%;
+
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1199px){ 
+
+    .flyer-container-shows{
+
+        margin-top: 15%;
+
+    }
+}
