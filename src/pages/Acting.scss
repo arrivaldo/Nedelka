@@ -195,7 +195,7 @@
     .images-container {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      gap: 21%;
+      gap: 17%;
     }
     .image-box .portfolio-image {
       height: 50vh;
@@ -212,6 +212,10 @@
         margin-top: 22%;
         margin-bottom: 90%;
       }
+
+      .image-box {
+        width: 300px;
+      }
   }
 
 
@@ -220,18 +224,19 @@
   
     .portfolio-page2 {
       height: 315vh;
+      margin-bottom: 42%;
     }
     .images-container {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      gap: 21%;
+      gap: 17%;
     }
     .image-box .portfolio-image {
       height: 50vh;
       margin-top: 0;
     }
     .image-box .content {
-      bottom: -95px;
+      bottom: -42px;
     }
     .image-box .portfolio-image {
       margin-top: 0;
@@ -248,11 +253,12 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 5%;
-      row-gap: 27%;
+      row-gap: 35%;
     }
     .portfolio-page2 {
       height: 160vh;
       margin-top: 12%;
+      margin-bottom: 50%;
     }
   
   }
@@ -263,7 +269,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       //gap: 5%;
-      row-gap: 17%;
+      row-gap: 35%;
     }
     .portfolio-page2 {
       height: 190vh;
