@@ -263,13 +263,18 @@ You can do whatever you want with the code. However if you love my content, you 
       .video-playlist .videos {
         margin-top: 4%;
       }
+
+      .video-playlist {
+        box-shadow: rgb(0, 0, 0) 0.3vmin 0.3vmin;
+        border: 0.2vmin solid rgb(0, 0, 0);
+      }
     
   }
   
-  @media screen and (min-width: 321px) and (max-width: 767px) { 
+  @media screen and (min-width: 321px) and (max-width: 400px) { 
     /* CSS rules for devices with widths between 321 pixels and 768 pixels */
   .videoCont2 {
-    padding: 15% 0;
+    padding: 2% 0%;
     height: auto;
   }
   .main-video {
@@ -337,7 +342,91 @@ You can do whatever you want with the code. However if you love my content, you 
     text-align: center;
     font-size: 1.7rem;
   }
+  .video-playlist {
+    box-shadow: rgb(0, 0, 0) 0.3vmin 0.3vmin;
+    border: 0.2vmin solid rgb(0, 0, 0);
+  }
 }
+
+
+@media screen and (min-width: 401px) and (max-width: 767px) { 
+  /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+.videoCont2 {
+  padding: 2% 2%;
+  height: auto;
+}
+.main-video {
+  width: 100%;
+  height: 18rem;
+}
+.video-playlist{ 
+  //margin-top: 35%;
+}
+.containerVideo {
+  //padding: 0;
+  width: 100%;
+  gap: 9.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titleVid {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 5%;
+}
+.video-playlist {
+  width: 100%;
+}
+.video h3 {
+  font-size: 1.2rem;
+}
+.playlist-title{
+  font-size: 2.2rem;
+  padding: 0;
+  text-align: center;
+}
+
+.video-playlist > p {
+  padding-left: 0;
+  text-align: center;
+}
+
+.video-duration {
+  display: none;
+}
+.video-track {
+  display: none;
+}
+.video-index {
+  display: none;
+}
+.time{
+  display: none;
+}
+.video-playlist .title {
+  padding-left: 1.5rem;
+}
+.video-playlist {
+  border: none;
+  box-shadow: none;
+}
+
+.video-playlist .videos {
+  margin-top: 4%;
+}
+.title {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.video-playlist {
+  box-shadow: rgb(0, 0, 0) 0.3vmin 0.3vmin;
+  border: 0.2vmin solid rgb(0, 0, 0);
+}
+}
+
   
   @media screen and (min-width: 768px) and (max-width: 1024px) { 
     /* CSS rules for devices with widths between 769 pixels and 1024 pixels */ 
@@ -380,8 +469,52 @@ You can do whatever you want with the code. However if you love my content, you 
           }
 
   }
+
+
+  @media screen and (min-width: 1025px) and (max-width: 1200px) { 
+
+    .videoCont2 {
+      // height: 130vh;
+     // margin-top: 10%;
+  }
+  .containerVideo {
+      //padding: 0;
+      width: 100%;
+      gap: 9.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10%;
+      padding: 0 15%;
+    }
+    .video-playlist > p {
+      padding-left: 0;
+      text-align: center;
+    }
+    .titleVid {
+     
+      text-align: center;
+    
+    }
+    .playlist-title{
+      font-size: 3rem;
+
+      text-align: center;
+    }
+    .video h3 {
+      font-size: 1.7rem;
+    }
+    .time {
+      font-size: 1.7rem;
+    }
+    .video-index {
+      font-size: 1.7rem;
+    }
+  }
+
   
-  @media screen and (min-width: 1025px) and (max-width: 1440px){ 
+  @media screen and (min-width: 1201px) and (max-width: 1440px){ 
     /* CSS rules for devices with a minimum width of 1025 pixels */
 
 .playlist-title{

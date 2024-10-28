@@ -22,7 +22,7 @@ const Acting = () => {
       <>
         <motion.div 
          variants={wrapper} initial="hidden" animate= "show"
-        className=" images-container">
+        className=" images-container mb-6">
           {portfolio.map((port, idx) => {
             return (
               <motion.div variants={item} className="image-box" key={idx}>

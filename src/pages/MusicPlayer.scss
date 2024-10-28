@@ -336,6 +336,8 @@ a.plyr__controls__item.plyr__control:hover,
      margin-top: -44%;
      margin-left: -1%;
      padding: 0;
+     padding: 0 5%;
+     border: none;
    }
    .music-text-container {
      width: 100%;
@@ -378,7 +380,7 @@ a.plyr__controls__item.plyr__control:hover,
    }
  }
 
- @media screen and (min-width: 321px) and (max-width: 767px) {
+ @media screen and (min-width: 321px) and (max-width: 420px) {
    /* CSS rules for devices with widths between 321 pixels and 768 pixels */
    .music-title {
      font-size: 2.2rem;
@@ -403,6 +405,8 @@ a.plyr__controls__item.plyr__control:hover,
      margin-top: -44%;
      margin-left: -1%;
      padding: 0;
+     padding: 0 5%;
+     border: none;
    }
    .music-text-container {
      width: 100%;
@@ -410,7 +414,7 @@ a.plyr__controls__item.plyr__control:hover,
      justify-content: center;
      display: flex;
      flex-direction: column;
-     margin-top: 100%;
+     margin-top: 115%;
      align-items: center;
    }
    .highlighted2 {
@@ -445,6 +449,222 @@ a.plyr__controls__item.plyr__control:hover,
      margin-top: 20%;
    }
  }
+
+
+ @media screen and (min-width: 421px) and (max-width: 520px) {
+  /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+  .music-title {
+    font-size: 2.2rem;
+    width: 100%;
+    margin-top: 13%;
+    margin-bottom: 7%;
+  }
+  .player-padding2 {
+    padding: 20% 0%;
+  }
+  .music-flex-container {
+    flex-direction: column;
+    border: none;
+
+  }
+  video {
+   max-width: 100%;
+  }
+  .music-video {
+    width: 98%;
+    height: 50%;
+    margin-top: -44%;
+    margin-left: -1%;
+    padding: 0;
+    padding: 0 5%;
+    border: none;
+  }
+  .music-text-container {
+    width: 100%;
+    padding: 3% 3%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 97%;
+    align-items: center;
+  }
+  .highlighted2 {
+    display: inline-block;
+    width: auto;
+  }
+  .music-text-title {
+    justify-content: center;
+  }
+  .music-description-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .music-description {
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+  }
+  .plyr--audio .plyr__controls {
+    box-shadow: none;
+  }
+  .music-box-shadow {
+    box-shadow: none;
+    margin-top: 5%;
+  }
+  .hover-song {
+    font-size: 1.2rem;
+  }
+  .music-master-parent2 {
+   //  height: 125vh;
+    margin-top: 20%;
+  }
+}
+
+
+
+@media screen and (min-width: 521px) and (max-width: 640px) {
+  /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+  .music-title {
+    font-size: 2.2rem;
+    width: 100%;
+    margin-top: 13%;
+    margin-bottom: 7%;
+  }
+  .player-padding2 {
+    padding: 20% 0%;
+  }
+  .music-flex-container {
+    flex-direction: column;
+    border: none;
+
+  }
+  video {
+   max-width: 100%;
+  }
+  .music-video {
+    width: 98%;
+    height: 50%;
+    margin-top: -44%;
+    margin-left: -1%;
+    padding: 0;
+    padding: 0 5%;
+    border: none;
+  }
+  .music-text-container {
+    width: 100%;
+    padding: 3% 3%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    align-items: center;
+  }
+  .highlighted2 {
+    display: inline-block;
+    width: auto;
+  }
+  .music-text-title {
+    justify-content: center;
+  }
+  .music-description-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .music-description {
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+  }
+  .plyr--audio .plyr__controls {
+    box-shadow: none;
+  }
+  .music-box-shadow {
+    box-shadow: none;
+    margin-top: 5%;
+  }
+  .hover-song {
+    font-size: 1.2rem;
+  }
+  .music-master-parent2 {
+   //  height: 125vh;
+    margin-top: 20%;
+  }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 767px) {
+  /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+  .music-title {
+    font-size: 2.2rem;
+    width: 100%;
+    margin-top: 13%;
+    margin-bottom: 7%;
+  }
+  .player-padding2 {
+    padding: 20% 0%;
+  }
+  .music-flex-container {
+    flex-direction: column;
+    border: none;
+
+  }
+  video {
+   max-width: 100%;
+  }
+  .music-video {
+    width: 98%;
+    height: 50%;
+    margin-top: -44%;
+    margin-left: -1%;
+    padding: 0;
+    padding: 0 5%;
+    border: none;
+  }
+  .music-text-container {
+    width: 100%;
+    padding: 3% 3%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    align-items: center;
+  }
+  .highlighted2 {
+    display: inline-block;
+    width: auto;
+  }
+  .music-text-title {
+    justify-content: center;
+  }
+  .music-description-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .music-description {
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+  }
+  .plyr--audio .plyr__controls {
+    box-shadow: none;
+  }
+  .music-box-shadow {
+    box-shadow: none;
+    margin-top: 5%;
+  }
+  .hover-song {
+    font-size: 1.2rem;
+  }
+  .music-master-parent2 {
+   //  height: 125vh;
+    margin-top: 20%;
+  }
+}
+
+
 
  @media screen and (min-width: 768px) and (max-width: 1024px) {
    /* CSS rules for devices with widths between 769 pixels and 1024 pixels */
@@ -516,7 +736,78 @@ a.plyr__controls__item.plyr__control:hover,
    }
  }
 
- @media screen and (min-width: 1025px) and (max-width: 1440px) {
+ @media screen and (min-width: 1025px) and (max-width: 1200px) { 
+
+  .music-title {
+    font-size: 3rem;
+    width: 100%;
+    margin-top: -2%;
+  }
+  .player-padding2 {
+    padding: 58% 0%;
+    padding-bottom: 0;
+  }
+  .music-text-container {
+   width: 100%;
+   padding: 3% 0%;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   margin-top: 13%;
+   align-items: center;
+ }
+  .music-video {
+    width: 98%;
+    height: 37%;
+    margin-top: -44%;
+    margin-left: -1%;
+    padding: 0 7%;
+    border: none;
+  }
+  .music-text-container {
+    width: 100%;
+    padding: 3%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlighted2 {
+    display: inline-block;
+
+    background-image: linear-gradient(to bottom, transparent 50%, #efe6aa 50%);
+    width: auto;
+  }
+  .music-text-title {
+    justify-content: center;
+  }
+  .music-description-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .music-description {
+    font-size: 1.7rem;
+    margin-bottom: 3%;
+  }
+  .plyr--audio .plyr__controls {
+    box-shadow: none;
+  }
+  .music-box-shadow {
+    box-shadow: none;
+    margin-top: 5%;
+  }
+  .hover-song {
+    font-size: 1.7rem;
+  }
+  .music-master-parent2 {
+   //  height: 130vh;
+  }
+
+ }
+
+ @media screen and (min-width: 1201px) and (max-width: 1440px) {
    /* CSS rules for devices with a minimum width of 1025 pixels */
    .music-title {
      font-size: 3.5rem;
@@ -549,6 +840,37 @@ a.plyr__controls__item.plyr__control:hover,
     width: 91%;
    }
  }
+
+
+ @media screen and (min-width: 1441px) and (max-width: 1550px) {
+
+
+  .music-title {
+    width: 47%;
+  }
+
+  .music-video {
+    height: 69.5%;
+  }
+  .highlighted2 {
+    width: auto;
+  }
+
+ }
+ @media screen and (min-width: 1551px) and (max-width: 1837px) {
+
+
+  .music-title {
+    width: 47%;
+  }
+  .highlighted2 {
+    width: auto;
+  }
+
+
+ }
+
+ 
  /* Orientation */
 
    /* CSS rules for devices in portrait orientation */
@@ -638,18 +960,6 @@ a.plyr__controls__item.plyr__control:hover,
 
 
 
-   @media screen and (min-width: 1441px) and (max-width: 1550px) {
-
-
-    .music-title {
-      width: 47%;
-    }
-
-    .music-video {
-      height: 69.5%;
-    }
-
-   }
 
  @media screen and (orientation: landscape) {
    /* CSS rules for devices in landscape orientation */

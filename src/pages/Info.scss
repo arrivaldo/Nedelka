@@ -116,7 +116,7 @@
       display: none
     }
     .about-description {
-      margin-top: 185%;
+      margin-top: 215%;
       font-size: 1.2rem;
       line-height: 2.5rem;
       text-align: left;
@@ -132,11 +132,80 @@
     .vinil-container {
       padding-left: 0%;
     } 
+
+    .album {
+      width: 2%;
+    }
+    .album-art {
+      width: 246px;
+    }
     
   
   }
   
-  @media screen and (min-width: 321px) and (max-width: 767px) { 
+
+  @media screen and (min-width: 321px) and (max-width: 400px) { 
+
+
+    .about-section {
+      flex-direction: column-reverse;
+    }
+    .about {
+      margin-left: 0;
+      //font-size: 8rem
+    }
+    .about-parent {
+      box-shadow: none;
+      border: none;
+    }
+    
+    .about-max-parent{
+      padding: 26% 0;
+    }
+    .about-main-text {
+      font-size: 1.9rem;
+       margin-bottom: 5%
+    }
+    .signing {
+      margin-top: 4%;
+      width: 50%;
+      display: none
+    }
+    .about-description {
+      margin-top: 200%;
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+      text-align: left;
+    }
+    .about-max-parent {
+    //  height: 220vh;
+    }
+    .highlighted3 {
+    
+      width: auto;
+  
+    }
+    .vinil-container {
+      padding-left: 0%;
+    } 
+    .album {
+      width: 2%;
+    }
+
+    .album-art {
+      width: 280px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 401px) and (max-width: 500px) { 
     /* CSS rules for devices with widths between 321 pixels and 768 pixels */ 
     .about-section {
       flex-direction: column-reverse;
@@ -163,7 +232,7 @@
       display: none
     }
     .about-description {
-      margin-top: 185%;
+      margin-top: 180%;
       font-size: 1.2rem;
       line-height: 2.2rem;
       text-align: left;
@@ -179,10 +248,181 @@
     .vinil-container {
       padding-left: 0%;
     } 
+    .album {
+      width: 2%;
+    }
     
+  .album-art {
+    width: 390px;
+  }
+  }
+
+
+
+  @media screen and (min-width: 501px) and (max-width: 600px) { 
+
+    .about-section {
+      flex-direction: column-reverse;
+    }
+    .about {
+      margin-left: 0;
+      margin-top: 10%
+    }
+    .about-parent {
+      box-shadow: none;
+      border: none;
+    }
+    .social-signing {
+      display: flex;
+      
+    }
+    .signing {
+      margin-top: 0%;
+      width: 30%;
+      height: 50%;
+      display: none;
+    //  margin-left: -20%
+    }
+    .about-description {
+      margin-top: 150%;
+      font-size: 1.4rem;
+      line-height: 2.9rem;
+      padding: 0;
+      margin-bottom: 20%;
   
+    }
+    .about-max-parent {
+      // height: 152vh;
+     }
+     .highlighted3 {
+    
+      width: auto;
+  
+   }
+   .vinil-container {
+    padding-left: 0%;
+  } 
+  
+    .album-art {
+      width: 92%;
+    }
+
+    .music-player-container {
+      width: 80vw;
+    }
   }
   
+
+
+  @media screen and (min-width: 601px) and (max-width: 666px) { 
+
+    .about-section {
+      flex-direction: column-reverse;
+    }
+    .about {
+      margin-left: 0;
+      margin-top: 10%
+    }
+    .about-parent {
+      box-shadow: none;
+      border: none;
+    }
+    .social-signing {
+      display: flex;
+      
+    }
+    .signing {
+      margin-top: 0%;
+      width: 30%;
+      height: 50%;
+      display: none;
+    //  margin-left: -20%
+    }
+    .about-description {
+      margin-top: 120%;
+      font-size: 1.4rem;
+      line-height: 2.9rem;
+      padding: 0;
+      margin-bottom: 20%;
+  
+    }
+    .about-max-parent {
+      // height: 152vh;
+     }
+     .highlighted3 {
+    
+      width: auto;
+  
+   }
+   .vinil-container {
+    padding-left: 0%;
+  } 
+  
+    .album-art {
+      width: 100%;
+    }
+
+    .music-player-container {
+      width: 80vw;
+    }
+  }
+
+  @media screen and (min-width: 667px) and (max-width: 767px) { 
+
+    .about-section {
+      flex-direction: column-reverse;
+    }
+    .about {
+      margin-left: 0;
+      margin-top: 10%
+    }
+    .about-parent {
+      box-shadow: none;
+      border: none;
+    }
+    .social-signing {
+      display: flex;
+      
+    }
+    .signing {
+      margin-top: 0%;
+      width: 30%;
+      height: 50%;
+      display: none;
+    //  margin-left: -20%
+    }
+    .about-description {
+      margin-top: 120%;
+      font-size: 1.4rem;
+      line-height: 2.9rem;
+      padding: 0;
+      margin-bottom: 20%;
+  
+    }
+    .about-max-parent {
+      // height: 152vh;
+     }
+     .highlighted3 {
+    
+      width: auto;
+  
+   }
+   .vinil-container {
+    padding-left: 0%;
+  } 
+  
+    .album-art {
+      width: 100%;
+    }
+
+    .music-player-container {
+      width: 80vw;
+    }
+  }
+
+
+
+
   @media screen and (min-width: 768px) and (max-width: 1024px) { 
     /* CSS rules for devices with widths between 769 pixels and 1024 pixels */ 
     .about-section {
@@ -234,8 +474,63 @@
       width: 80vw;
     }
   }
+
+
+
+   
+  @media screen and (min-width: 1025px) and (max-width: 1200px) { 
+    /* CSS rules for devices with widths between 769 pixels and 1024 pixels */ 
+    .about-section {
+      flex-direction: column-reverse;
+    }
+    .about {
+      margin-left: 0;
+      margin-top: 10%
+    }
+    .about-parent {
+      box-shadow: none;
+      border: none;
+    }
+    .social-signing {
+      display: flex;
+      
+    }
+    .signing {
+      margin-top: 0%;
+      width: 30%;
+      height: 50%;
+      display: none;
+    //  margin-left: -20%
+    }
+    .about-description {
+      margin-top: 75%;
+      font-size: 1.4rem;
+      line-height: 2.9rem;
+      padding: 0;
   
-  @media screen and (min-width: 1025px) and (max-width: 1440px){ 
+    }
+    .about-max-parent {
+      // height: 152vh;
+     }
+     .highlighted3 {
+    
+      width: auto;
+  
+   }
+   .vinil-container {
+    padding-left: 0%;
+  } 
+  
+    .album-art {
+      width: 100%;
+    }
+
+    .music-player-container {
+      width: 80vw;
+    }
+  }
+  
+  @media screen and (min-width: 1201px) and (max-width: 1440px){ 
     /* CSS rules for devices with a minimum width of 1025 pixels */ 
     .about-description {
       margin-top: 6%;
@@ -247,7 +542,7 @@
      }
     .about-parent {
       box-shadow: none;
-      height: 112vh;
+      // height: 112vh;
     }
     .about-max-parent{
       padding: 10% 0;
@@ -293,6 +588,32 @@
       }
 
   }
+
+
+
+  @media screen and (min-width: 1551px) and (max-width: 1837px) {
+
+    .album {
+      width: 80%;
+    }
+          .album-art {
+            width: 400px;
+          }
+          .vinyl{
+            left: 35%;
+          }
+    
+          .highlighted3{
+            width: auto;
+          }
+    
+          .music-player-container::after {
+            left: 137%;
+            margin-top: 2%;
+          }
+    
+      }
+      
   
   /* Orientation */
   @media screen and (orientation: portrait) { 

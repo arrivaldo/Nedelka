@@ -256,7 +256,7 @@
    }
    
    .about-parent {
-       height: 117vh;
+    //    height: 117vh;
    }
    .music-player-container {
       
@@ -265,6 +265,40 @@
        }
    }
  }
+
+//  @media screen and (min-width: 1441px) and (max-width: 1600px) {
+//     .album-art {
+  
+//         height: 300px;
+//         position: relative;
+//         width: 340px;
+//         z-index: 10;
+//         border: .5vmin solid #05060f;
+//      }
+//      .album {
+//         box-shadow: none;
+//     }
+//     .vinyl {
+   
+//         box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+//         height: 450px;
+//         left: 15%;
+//         top: 25px;
+//         width: 450px;
+//     }
+    
+//     .about-parent {
+//      //    height: 117vh;
+//     }
+//     .music-player-container {
+       
+//         &:after {
+//             display: none;
+//         }
+//     }
+
+
+//  }
 
 
  /* Orientation */
