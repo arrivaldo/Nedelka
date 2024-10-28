@@ -10,7 +10,6 @@ You can do whatever you want with the code. However if you love my content, you 
     position:relative;
     z-index: 100000000;
    // background: "#fff",
-    height: 78vh;
     padding: 5% 0;
     width: 100%;
     display: flex;
@@ -344,7 +343,7 @@ You can do whatever you want with the code. However if you love my content, you 
     /* CSS rules for devices with widths between 769 pixels and 1024 pixels */ 
 
         .videoCont2 {
-            height: 130vh;
+            // height: 130vh;
            // margin-top: 10%;
         }
         .containerVideo {
@@ -415,7 +414,7 @@ You can do whatever you want with the code. However if you love my content, you 
         }
         .videoCont2 {
             padding: 1% 0;
-            height: 80vh;
+            // height: 80vh;
         }
       
 
@@ -452,20 +451,47 @@ You can do whatever you want with the code. However if you love my content, you 
 
     @media screen and (min-height: 1150px) and (max-height: 1180px) { 
       .videoCont2 {
-        height: 110vh;
+        // height: 110vh;
       }
     }
 
     @media screen and (min-height: 1360px) and (max-height: 1366px) { 
       .videoCont2 {
-        height: 100vh;
+        // height: 100vh;
       }
+
+    
     }
 
     
 
   }
-  
+  @media screen and (min-width: 1441px) and (max-width: 1550px) {
+
+
+  .main-video .video-playlist {
+    height: 25rem;
+  }
+
+  .video-playlist{
+    margin-top: 5%;
+  }
+
+.video h3 {
+  font-size: 1.5rem;
+}
+.time {
+  font-size: 1.5rem;
+}
+
+.video p {
+  font-size: 1.5rem;
+}
+.playlist-title {
+  font-size: 2.9rem;
+}
+
+}
   @media screen and (orientation: landscape) { 
     /* CSS rules for devices in landscape orientation */ 
   }

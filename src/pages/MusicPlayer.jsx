@@ -89,12 +89,13 @@ const MusicPlayer = () => {
 
   return (
     <>
+<section style={{minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
 
     <Info />
 
       <motion.div
       
-      className="music-master-parent2"
+      className="music-master-parent2 flex-grow"
         style={{ position: 'relative', zIndex: '10',  }}
         initial={{ y: "100%", opacity: 0 }}
         animate={{ y: "0", opacity: 1 }}
@@ -216,6 +217,8 @@ const MusicPlayer = () => {
       </motion.div>
 
       <VideoPlayer />
+      </section>
+
     </>
   );
 };

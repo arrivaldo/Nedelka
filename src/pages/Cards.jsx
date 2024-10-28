@@ -81,14 +81,14 @@ style={{
       >
         {/* <FiArrowRight className="text-4xl group-hover:-rotate-45 transition-transform duration-500 ml-auto" /> */}
         <div className="flex">
-          <h4 className="card-title md:text-4xl">
+          <h4 className="card-title md:text-4xl xl:text-[2rem]">
             {heading.split("").map((l, i) => (
               <ShiftLetter letter={l} key={i} />
             ))}
           </h4>
           <FiArrowRight className="text-4xl group-hover:-rotate-45 transition-transform duration-500 ml-auto" />
         </div>
-        <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl">{description}</p>
+        <p className="text-xl md:text-2xl lg:text-xl xl:text-[1.2rem]">{description}</p>
 
       </div>
     </motion.div>
@@ -97,7 +97,7 @@ style={{
 
 const ShiftLetter = ({ letter }) => {
   return (
-    <div className="inline-block overflow-hidden h-[36px]  text-2xl md:text-3xl lg:text-2xl xl:text-3xl">
+    <div className="inline-block overflow-hidden h-[36px]  text-2xl md:text-3xl lg:text-2xl xl:text-[1.675rem]">
       <motion.span
         className="flex flex-col min-w-[4px]"
         style={{

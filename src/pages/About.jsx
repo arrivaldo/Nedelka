@@ -31,10 +31,12 @@ const About4 = () => {
             // width: "100vw",
             // height: '92vh',
             // marginBottom: "8%",
+            minHeight: '100vh',
+            display: 'flex'
           }
         }
       >
-        <div className="services">
+        <div className="services flex-grow">
           <div className="upper">
             <div className="text">
               <h4 className="about-main" style={{}}>

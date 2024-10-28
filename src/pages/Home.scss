@@ -206,6 +206,24 @@
   }
 }
 
+
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
+  /* CSS rules for devices with a minimum width of 1025 pixels */
+  .buttons {
+    gap: 5rem;
+    margin-top: 0%;
+  }
+  .neumorphic {
+    width: 155px;
+    aspect-ratio: 25/8;
+  }
+  .main-text {
+    width: 70%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
 /* Orientation */
 @media screen and (orientation: portrait) {
   /* CSS rules for devices in portrait orientation */

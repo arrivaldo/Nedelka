@@ -43,7 +43,7 @@
   /* CSS rules for devices with a maximum width of 320 pixels */ 
   .gallery-section {
     padding: 0% 7%;
-    margin-top: 217%;
+    // margin-top: 217%;
   }
 }
 
@@ -51,7 +51,7 @@
   /* CSS rules for devices with widths between 321 pixels and 768 pixels */
   .gallery-section {
     padding: 0% 7%;
-    margin-top: 345%;
+    // margin-top: 345%;
     padding-bottom: 5%;
   }
 }
@@ -60,14 +60,14 @@
   /* CSS rules for devices with widths between 769 pixels and 1024 pixels */ 
 .gallery-section {
   padding: 0% 10%;
-  margin-top: 217%;
+  // margin-top: 217%;
 }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px){ 
   /* CSS rules for devices with a minimum width of 1025 pixels */ 
   .gallery-section {
-    margin-top: 15%;
+    // margin-top: 15%;
   }
 }
 
@@ -79,7 +79,7 @@
 
       .gallery-section {
         padding: 0% 7%;
-        margin-top: 282%;
+        // margin-top: 282%;
         padding-bottom: 5%;
 
       }
@@ -90,7 +90,7 @@
   @media screen and (min-height: 1150px) and (max-height: 1180px) {
     .gallery-section {
       padding: 0% 7%;
-      margin-top: 190%;
+      // margin-top: 190%;
       padding-bottom: 5%;
 
     }
@@ -99,7 +99,7 @@
   @media screen and (min-height: 1350px) and (max-height: 1380px) { 
     .gallery-section {
       padding: 0% 7%;
-      margin-top: 100%;
+      // margin-top: 100%;
       padding-bottom: 5%;
 
     }

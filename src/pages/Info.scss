@@ -65,7 +65,7 @@
   }
   
   .about-parent {
-    height: 100vh;
+    // height: 100vh;
     position: relative;
     z-index: 100000000;
     box-shadow: rgb(0, 0, 0) 0.1vmin 0.1vmin;
@@ -122,7 +122,7 @@
       text-align: left;
     }
     .about-max-parent {
-     height: 220vh;
+    //  height: 220vh;
     }
     .highlighted3 {
     
@@ -169,7 +169,7 @@
       text-align: left;
     }
     .about-max-parent {
-     height: 220vh;
+    //  height: 220vh;
     }
     .highlighted3 {
     
@@ -215,7 +215,7 @@
   
     }
     .about-max-parent {
-      height: 152vh;
+      // height: 152vh;
      }
      .highlighted3 {
     
@@ -243,7 +243,7 @@
       
     }
    .about-max-parent {
-      height: 140vh;
+      // height: 140vh;
      }
     .about-parent {
       box-shadow: none;
@@ -267,19 +267,45 @@
    
   
   }
+
+
+
+
+
+  @media screen and (min-width: 1441px) and (max-width: 1550px) {
+
+.album {
+  width: 80%;
+}
+      .album-art {
+        width: 400px;
+      }
+      .vinyl{
+        left: 35%;
+      }
+
+      .highlighted3{
+        width: auto;
+      }
+
+      .music-player-container::after {
+        left: 127%;
+      }
+
+  }
   
   /* Orientation */
   @media screen and (orientation: portrait) { 
     /* CSS rules for devices in portrait orientation */ 
     @media screen and (min-height: 650px) and (max-height: 668px) { 
       .about-max-parent {
-        height: 261vh;
+        // height: 261vh;
       }
     }
   
     @media screen and (min-height: 700px) and (max-height: 738px) { 
       .about-max-parent {
-        height: 241vh;
+        // height: 241vh;
       }
       .about-description {
         margin-top: 172%;
@@ -291,7 +317,7 @@
         //margin-top: 163%;
       }
       .about-max-parent {
-        height: 205vh;
+        // height: 205vh;
       }
       
     }
@@ -301,31 +327,31 @@
         margin-top: 163%;
       }
       .about-max-parent {
-        height: 185vh;
+        // height: 185vh;
       }
      
     }
     @media screen and (min-height: 929px) and (max-height: 935px) { 
       .about-max-parent {
-        height: 205vh;
+        // height: 205vh;
       }
     }
     @media screen and (min-height: 970px) and (max-height: 1028px) { 
       .about-max-parent {
-        height: 157vh;
+        // height: 157vh;
       }
     }
     @media screen and (min-height: 1150px) and (max-height: 1180px) { 
 
       .about-max-parent {
-        height: 135vh;
+        // height: 135vh;
       }
     }
 
 
     @media screen and (min-height: 1300px) and (max-height: 1366px) { 
       .about-max-parent {
-        height: 105vh;
+        // height: 105vh;
       }
       .about-description{
         margin-top: 75%;

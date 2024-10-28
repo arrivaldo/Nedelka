@@ -373,7 +373,7 @@ a.plyr__controls__item.plyr__control:hover,
      font-size: 1.2rem;
    }
    .music-master-parent2 {
-     height: 125vh;
+    //  height: 125vh;
      margin-top: 20%;
    }
  }
@@ -441,7 +441,7 @@ a.plyr__controls__item.plyr__control:hover,
      font-size: 1.2rem;
    }
    .music-master-parent2 {
-     height: 125vh;
+    //  height: 125vh;
      margin-top: 20%;
    }
  }
@@ -512,7 +512,7 @@ a.plyr__controls__item.plyr__control:hover,
      font-size: 1.7rem;
    }
    .music-master-parent2 {
-     height: 130vh;
+    //  height: 130vh;
    }
  }
 
@@ -561,7 +561,7 @@ a.plyr__controls__item.plyr__control:hover,
          margin-top: 17%;
        }
        .music-master-parent2 {
-         height: 160vh;
+        //  height: 160vh;
        }
      }
 
@@ -570,13 +570,13 @@ a.plyr__controls__item.plyr__control:hover,
          margin-top: 15%;
        }
        .music-master-parent2 {
-         height: 140vh;
+        //  height: 140vh;
        }
      }
 
      @media screen and (min-height: 880px) and (max-height: 900px) {
        .music-master-parent2 {
-         height: 122vh;
+        //  height: 122vh;
        }
      }
 
@@ -587,7 +587,7 @@ a.plyr__controls__item.plyr__control:hover,
              margin-top: 14%;
            }
          .music-master-parent2 {
-             height: 73vh;
+            //  height: 73vh;
            }
 
            .music-text-container {
@@ -602,7 +602,7 @@ a.plyr__controls__item.plyr__control:hover,
               padding: 0% 0%;
             }
             .music-master-parent2 {
-              height: 65vh;
+              // height: 65vh;
             }
            }
         }
@@ -619,14 +619,14 @@ a.plyr__controls__item.plyr__control:hover,
 
         @media screen and (min-height: 1150px) and (max-height: 1180px) { 
           .music-master-parent2 {
-            height: 120vh;
+            // height: 120vh;
           }
         }
 
         @media screen and (min-height: 1360px) and (max-height: 1366px) { 
 
           .music-master-parent2 {
-           height: 120vh;
+          //  height: 120vh;
          }
    }
 
@@ -634,6 +634,23 @@ a.plyr__controls__item.plyr__control:hover,
    
 
    }
+
+
+
+
+   @media screen and (min-width: 1441px) and (max-width: 1550px) {
+
+
+    .music-title {
+      width: 47%;
+    }
+
+    .music-video {
+      height: 69.5%;
+    }
+
+   }
+
  @media screen and (orientation: landscape) {
    /* CSS rules for devices in landscape orientation */
  }

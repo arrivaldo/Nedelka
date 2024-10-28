@@ -181,7 +181,7 @@ const VideoPlayer = () => {
                        
                       }}
                     >
-                      <p className="video-index" style={{ marginLeft: "-10%" }}>
+                      <p className="video-index" style={{  }}>
                         {index + 1 > 9 ? index + 1 : "0" + (index + 1)}.{" "}
                       </p>
                       <h3 style={{}} className=" title">

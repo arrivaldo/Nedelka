@@ -12,7 +12,7 @@ const Info = () => {
     <>
       {/* <h1 style={{padding: '0 10%', fontSize: '4rem'}}>About</h1> */}
       <motion.div
-      className="about-max-parent"
+      className="about-max-parent flex-grow"
         style={{  }}
         initial={{ y: "100%", }}
         animate={{ y: "0",  }}
