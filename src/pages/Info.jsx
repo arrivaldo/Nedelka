@@ -105,7 +105,7 @@ const Info = () => {
             <span style={{ background: "transparent" }}> Mexican folclore</span>
             , prehispanic instruments and different styles of sounds she’s been
             influenced by. Nedelka leads this project on vocals collaborating
-            with extraordinary musicians on bass, guitar and
+            with extraordinary musicians on bass, guitar,
             keyboards and percussion.
           </motion.p>
           </div>
